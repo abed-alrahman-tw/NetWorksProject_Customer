@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/more"
+    tools:context=".fragments.MoreDetailsFragment">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin ="23dp"
+        android:src="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/changePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        android:text="change Password"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/FAQS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/changePass"
+        android:text="FAQS"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/aboutApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/FAQS"
+        android:text="aboutApp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/aboutApp"
+        android:text="terms and policy"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+
+
+    <TextView
+        android:id="@+id/PrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/terms"
+        android:text="Privacy policy"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+    <TextView
+        android:id="@+id/rateApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/PrivacyPolicy"
+        android:text="rate app"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rateApp"
+        android:text="delete Account"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:paddingHorizontal="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityDoneChoice">
+
+
+    <ImageView
+        android:id="@+id/img_done_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/done_order_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="102dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_great"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/great"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_done_order"
+        android:layout_marginTop="73dp"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_great"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="The ORDER has been sent. A technician will \n  contact you"
+        android:layout_marginTop="13dp"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="42dp"
+        />
+
+    <Button
+        android:id="@+id/btn_go_to_home"
+        android:layout_width="255dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/shape_background_btn_next"
+        android:text="Go To Home"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
